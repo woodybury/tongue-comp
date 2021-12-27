@@ -1,0 +1,101 @@
+body {
+  background-color: #000;
+  margin: 0;
+  font-family: sans-serif;
+  color: #fff
+}
+
+video {
+    position: fixed;
+    bottom: 0;
+    right: 2rem;
+    transform: rotateY(180deg);
+}
+
+.box {
+    position: fixed;
+    bottom: 0;
+    right: 2rem;
+    transform: rotateY(180deg);
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+}
+
+.view {
+    border: #EF5E78 solid 4px;
+    width: 8rem;
+    padding: 2rem;
+    position: absolute;
+    right: 2rem;
+    top: 3rem;
+}
+
+h1 {
+  font-size: 4rem;
+  margin: 0;
+}
+
+
+div.count {
+  font-size: 10rem;
+  display: flex;
+  justify-content: center;
+}
+
+div.count.train {
+  animation: spin 1000ms linear infinite;
+}
+
+div.tongue {
+  font-size: 4rem;
+  margin-left: 4rem;
+}
+
+div.left.tongue {
+    transform: rotate(90deg);
+}
+
+div.right.tongue {
+  transform: rotate(-90deg);
+}
+
+div.play.tongue {
+  transform: rotate(0deg);
+}
+
+div.tongue.loading {
+    animation: spin 1000ms linear infinite;
+}
+
+@keyframes spin {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
+}
+
+div.score {
+    display: flex;
+    justify-content: center;
+}
+
+canvas.game {
+  margin-left: 2rem;
+  margin-bottom: 3rem;
+  margin-top: 2rem;
+  border: #66ff00 solid 4px;
+}
+
+.progress {
+    justify-content: center;
+}
+
+.progress.show {
+    display: flex;
+}
+
+.progress.hide {
+    display: none;
+}
